@@ -12,8 +12,12 @@ public class KthSL {
         System.out.println(""+ k+" th min is "+ kthMin);
     }
 
-    private static int getKthMin(int []arr, int k){
+    private static int myApproach(int []arr, int k){
         Arrays.sort(arr);
         return arr[k-1];
+
+        /**
+         * TC -> depends on the sorting algo used
+         */
     }
 }
