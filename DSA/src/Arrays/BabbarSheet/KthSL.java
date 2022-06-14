@@ -1,4 +1,4 @@
-package BabbarSheet.arrays;
+package Arrays.BabbarSheet;
 
 import java.util.*;
 

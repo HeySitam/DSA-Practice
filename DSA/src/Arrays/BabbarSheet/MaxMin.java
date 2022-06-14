@@ -1,6 +1,4 @@
-package BabbarSheet.arrays;
-
-import java.util.Arrays;
+package Arrays.BabbarSheet;
 
 public class MaxMin {
     public static void main(String[] args) {
