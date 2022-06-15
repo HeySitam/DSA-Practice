@@ -8,7 +8,7 @@ import java.util.Scanner;
  * 3. You are required to not use any loops. Complete the body of print Increasing function to achieve it. Don't change the signature of the function.
  */
 public class PrintIncreasing {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         // write your code here
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
