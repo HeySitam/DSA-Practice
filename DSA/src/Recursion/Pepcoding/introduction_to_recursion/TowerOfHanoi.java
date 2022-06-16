@@ -1,4 +1,4 @@
-package Recursion.Pepcoding;
+package Recursion.Pepcoding.introduction_to_recursion;
 
 import java.util.Scanner;
 
