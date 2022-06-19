@@ -14,7 +14,6 @@ public class GetSubsequence {
         Scanner sc = new Scanner(System.in);
         String str = sc.nextLine();
         ArrayList<String> ssList = gss(str);
-        ssList.remove(0);
         System.out.print(ssList);
     }
 
