@@ -32,4 +32,21 @@ class FindDuplicatesInArraySolution{
 
         return list;
     }
+
+    // TC -> O(n) and SC-> O(1)
+    public  ArrayList<Integer> optimized(int arr[], int n){
+        ArrayList<Integer> list = new ArrayList<>();
+        for(int i = 0; i<n ; i++){
+            arr[arr[i]%n] += n;
+        }
+
+        for(int i = 0; i<n ; i++){
+            if (arr[i] >= n*2)
+                list.add(i);
+        }
+
+        if(list.isEmpty()) list.add(-1);
+
+        return list;
+    }
 }
