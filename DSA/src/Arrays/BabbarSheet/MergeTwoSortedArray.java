@@ -7,9 +7,9 @@ import java.util.Comparator;
 
 public class MergeTwoSortedArray {
     public static void main(String[] args) {
-        int arr1[] = {7, 9, 9, 10, 11, 11, 13,14, 17, 19};
+        int arr1[] = {7, 9, 9, 10, 11, 11, 13, 14, 17, 19};
         int arr2[] = {1, 1, 4, 5, 8, 11, 13, 16, 19, 19};
-        new MergeTwoSortedArraySolution().merge(arr1,arr2,arr1.length, arr2.length);
+        new MergeTwoSortedArraySolution().merge(arr1, arr2, arr1.length, arr2.length);
         System.out.println(Arrays.toString(arr1));
         System.out.println(Arrays.toString(arr2));
     }
@@ -78,10 +78,10 @@ class MergeTwoSortedArraySolution {
                         }
                     }
                 } else {
-                    if (a2[i-n] > a2[j - n]) swap(a2, i-n, j - n);
+                    if (a2[i - n] > a2[j - n]) swap(a2, i - n, j - n);
                 }
             }
-            gap = (int)Math.ceil(gap/2);
+            gap = (int) Math.ceil(gap / 2);
         }
     }
 
