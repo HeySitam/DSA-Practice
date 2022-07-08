@@ -45,8 +45,28 @@ class UnionSolution{
 
 class IntersectionSolution{
     // T.C -> O(m*log(m) + n*log(n))
-    void hashSetApproach(int[] a, int n, int[] b, int m){
+    int[] hashSetApproach(int[] a, int n, int[] b, int m){
+        ArrayList<Integer> list = new ArrayList<>();
+        HashSet<Integer> set = new HashSet<>();
+        for(int i = 0; i<n; i++){
+            set.add(a[i]);
+        }
 
+        for( int i = 0; i<m; i++)
+        {
+            if(set.contains(a[i]))
+              list.add(a[i]);
+        }
+        int arr[] = {};
+        if(!list.isEmpty()) {
+            arr = new int[list.size()];
+            int pos = 0;
+            for (int i : list) {
+                arr[pos] = i;
+                pos++;
+            }
+        }
+        return arr;
     }
 
     // T.C -> O(m+n)
