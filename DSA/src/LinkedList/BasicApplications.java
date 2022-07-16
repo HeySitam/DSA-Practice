@@ -9,9 +9,14 @@ public class BasicApplications {
        list.insertFirst(92);
        list.insertFirst(32);
        list.insertLastWithTail(23);
-       list.insertLastWithoutTail(24);
        list.display();
-       list.insertAt(5,3);
+       System.out.println();
+       list.insertAt(5,2);
        list.display();
+       System.out.println();
+       list.deleteAt(3);
+       list.display();
+       System.out.println();
+       System.out.println(list.findPos(13));
     }
 }
