@@ -26,6 +26,7 @@ public class LL {
             temp = temp.next;
         }
         System.out.print("End");
+        System.out.println();
     }
 
     // TC -> O(1)
@@ -126,6 +127,21 @@ public class LL {
             idx ++;
         }
         return -1;
+    }
+
+    public void insertRec(int val, int index){
+        insertRec(val,index,head);
+    }
+
+    private Node insertRec(int val, int index, Node node){
+        if(index == 0){
+            Node newNode = new Node(val);
+            size++;
+            newNode.next = node;
+            return newNode;
+        }
+        node.next = insertRec(val,--index,node.next);
+        return node;
     }
 
     private class Node {

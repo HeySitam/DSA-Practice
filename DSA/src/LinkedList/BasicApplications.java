@@ -16,7 +16,7 @@ public class BasicApplications {
        System.out.println();
        list.deleteAt(3);
        list.display();
-       System.out.println();
-       System.out.println(list.findPos(13));
+       list.insertRec(10,2);
+       list.display();
     }
 }

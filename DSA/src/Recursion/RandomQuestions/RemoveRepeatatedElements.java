@@ -1,4 +1,4 @@
-package Recursion;
+package Recursion.RandomQuestions;
 
 public class RemoveRepeatatedElements {
     public static void main(String[] args){
