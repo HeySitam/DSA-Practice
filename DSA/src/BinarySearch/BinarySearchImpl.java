@@ -2,17 +2,12 @@ package BinarySearch;
 
 public class BinarySearchImpl {
     public static void main(String[] args){
-     BinarySearch bs = new BinarySearch();
      int[] arr = {1,2,3,4,5,6,7,8,9,10};
-     int idx = bs.binarySearch(arr,11);
+     int idx = binarySearch(arr,0, arr.length-1,6);
      System.out.println(idx);
     }
-}
 
-class BinarySearch {
-    public int binarySearch(int[] arr, int key){
-        int start = 0;
-        int end = arr.length-1;
+    public static int binarySearch(int[] arr,int start,int end, int key){
         while(start <= end){
             int mid = (start+end)/2;
             if(arr[mid] == key) {
@@ -26,3 +21,4 @@ class BinarySearch {
         return -1;
     }
 }
+
