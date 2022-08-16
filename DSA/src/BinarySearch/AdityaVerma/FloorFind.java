@@ -16,7 +16,7 @@ public class FloorFind {
             else if (arr[mid] > k)
                 end = mid - 1;
             else if (arr[mid] < k)
-                start = start + 1;
+                start = mid + 1;
         }
         return -1;
     }
