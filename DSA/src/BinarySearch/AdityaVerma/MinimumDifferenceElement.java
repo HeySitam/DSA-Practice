@@ -3,11 +3,11 @@ package BinarySearch.AdityaVerma;
 public class MinimumDifferenceElement {
     public static void main(String[] args){
         // suppose it is an infinite array
-        int[] arr = {4, 6, 7, 10};
-        int key = 7;
+        int[] arr = {1, 3, 8, 10, 15};
+        int key = 12;
 
-        int leftPos = getLeftElePos(arr,7);
-        int rightPos = getRightElePos(arr,7);
+        int leftPos = getLeftElePos(arr,key);
+        int rightPos = getRightElePos(arr,key);
         if((key - arr[leftPos]) <= (arr[rightPos] - key))
             System.out.println(arr[leftPos]);
         else
