@@ -25,20 +25,20 @@ fun main() {
  * Stack
  */
 interface Stack {
-    fun push(item: Int)
-    fun pop(): Int?
+    fun push(item: Any)
+    fun pop(): Any?
 }
 
 /**
  * With Array Impl
  */
 class StackWithArr : Stack {
-    private val arr = IntArray(8) { _ ->
+    private val arr = Array<Any>(8) { _ ->
         0
     }
     private var top: Int = -1
 
-    override fun push(item: Int) {
+    override fun push(item: Any) {
         if (top == arr.size)
             println("Stack Overflow")
         else {
@@ -48,7 +48,7 @@ class StackWithArr : Stack {
         }
     }
 
-    override fun pop(): Int? {
+    override fun pop(): Any? {
         return if (top == -1) {
             println("Array is empty")
             null
@@ -69,11 +69,11 @@ class StackWithArr : Stack {
 /**
  * With LinkedList Impl
  */
-class Node(var info: Int, var next: Node? = null)
+class Node(var info: Any, var next: Node? = null)
 
 class StackWithLL : Stack {
     private var top: Node? = null
-    override fun push(item: Int) {
+    override fun push(item: Any) {
         val newNode = Node(info = item)
         if (top == null) {
             top = newNode
@@ -84,7 +84,7 @@ class StackWithLL : Stack {
         }
     }
 
-    override fun pop(): Int? {
+    override fun pop(): Any? {
         return if (top == null) {
             println("Stack is Empty")
             null
@@ -109,4 +109,5 @@ class StackWithLL : Stack {
             println()
         }
     }
+
 }
